@@ -1,0 +1,15 @@
+name: hTitles
+version: '${version}'
+main: com.github.neveshardd.titles.TitlesPaper
+description: Sistema de titulos flutuantes do neveshardd
+api-version: '26.2'
+authors: [neveshardd]
+dependencies:
+  server:
+    hCore:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    ViaVersion:
+      load: BEFORE
+      required: false

@@ -1,0 +1,28 @@
+# Titulo equipado automaticamente por quem ainda nao escolheu nenhum. Vazio = sem titulo.
+default-title: ""
+
+# Tamanho do slime invisivel que carrega o titulo em cima do jogador. Cliente 1.8 (legacy) recebe
+# um slime maior e cliente 1.9+ (modern) um menor, pra o titulo ficar na mesma altura nos dois.
+slime-size:
+  legacy: 2
+  modern: 0
+
+# Escala do slime pros clientes modernos (1.20.5+). O size nao desce de 1, entao pra abaixar o
+# titulo alem disso use valores menores que 1.0 (ex: 0.5). Cliente 1.8 ignora.
+slime-scale:
+  modern: "0.6"
+
+# Uma entrada por titulo. "permission" vazia = liberado pra todo mundo, caso contrario, so aparece
+# no /titulos de quem tiver aquela permissao.
+#
+# text: texto colorido mostrado flutuando acima do jogador.
+titles:
+  veterano:
+    text: "&610-Year Dunky Veteran"
+    permission: "titles.veterano"
+  fundador:
+    text: "&b&lFundador da Rede"
+    permission: "titles.fundador"
+  lenda:
+    text: "&d&lLenda"
+    permission: "titles.lenda"

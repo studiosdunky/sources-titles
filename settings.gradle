@@ -1,0 +1,3 @@
+rootProject.name = 'sync-titles-multi-version'
+
+includeBuild('../sources/hCore')

@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.6.1'
+    id 'io.papermc.paperweight.userdev' version '2.0.0-beta.23'
+}
+
+group = 'com.github.neveshardd'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://repo.viaversion.com' }
+}
+
+dependencies {
+    paperweight.paperDevBundle('26.2.build.124-stable')
+    compileOnly 'com.github.neveshardd:hCore:1.0-SNAPSHOT'
+    compileOnly 'com.viaversion:viaversion-api:5.12.0'
+
+    testImplementation 'io.papermc.paper:paper-api:26.2.build.124-stable'
+    testImplementation 'com.github.neveshardd:hCore:1.0-SNAPSHOT'
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+def pluginVersion = version
+
+processResources {
+    filesMatching(['paper-plugin.yml']) {
+        expand(version: pluginVersion)
+    }
+}
+
+shadowJar {
+    archiveFileName = 'hTitles.jar'
+    destinationDirectory = layout.buildDirectory.dir('libs')
+}
+
+test {
+    useJUnitPlatform()
+}

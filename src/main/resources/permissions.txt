@@ -1,0 +1,2 @@
+titles.use - Abre o menu de titulos e equipa um titulo que possui
+titles.reload - Recarrega o titles.yml (/titles reload)
