@@ -21,11 +21,11 @@ titles:
     text: "&610-Year Dunky Veteran"
     permission: "titles.veterano"
   fundador:
-    text: "&b&lFundador da Rede"
+    text: "&bFundador da Rede"
     permission: "titles.fundador"
-  lenda:
-    text: "&d&lLenda"
-    permission: "titles.lenda"
+  lendario:
+    text: "&dLendário"
+    permission: "titles.lendario"
   pesadelo:
     text: "&cPesadelo"
     permission: "titles.pesadelo"
