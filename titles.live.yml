@@ -32,3 +32,6 @@ titles:
   ceifador:
     text: "&0Ceifador de almas"
     permission: "titles.ceifador"
+  king:
+    text: "&cKING"
+    permission: "titles.king"
