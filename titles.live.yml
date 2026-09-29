@@ -29,3 +29,6 @@ titles:
   pesadelo:
     text: "&cPesadelo"
     permission: "titles.pesadelo"
+  ceifador:
+    text: "&0Ceifador de almas"
+    permission: "titles.ceifador"
