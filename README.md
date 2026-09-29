@@ -35,7 +35,7 @@ Ver `titles.live.yml` (config usada no Lobby quando a altura foi aprovada):
 
 ## Build
 
-Depende do `hCore` em `../sources/hCore` e do paperweight-userdev (dev bundle Paper 26.2).
+Depende do `hCore` em `../sources-java/hCore` e do paperweight-userdev (dev bundle Paper 26.2).
 
 ```
 ./gradlew shadowJar
